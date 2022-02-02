@@ -1,0 +1,17 @@
+name: automateforgood
+namespace:
+  name: automateforgood
+ 
+image:
+  repository: 202011501/automateforgood
+  tag: latest
+
+replicaCount: 1
+
+service: 
+  port:
+    flask: 5000
+    chef: 
+      http: 80
+      https: 443
+  type: LoadBalancer
